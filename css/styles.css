@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header Section Styles */
+
+.header__container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1.5px solid #f5f5f5;
+}
+
+/* Title Section Inside Header */
+.header__container .section__title {
+  font-size: 21px;
+  font-weight: 500;
+  width: 20%;
+  text-align: right;
+  padding-top: 20px;
+}
+
+.section__navbar {
+  width: 55%;
+}
+
+.header__container .section__navbar ul {
+  list-style: none;
+}
+
+.header__container .section__navbar ul li {
+  display: inline-block;
+  padding-top: 25px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.header__container .section__navbar ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.header__container .section__navbar ul li:nth-child(1) {
+  margin-left: 50px;
+}
+
+@keyframes hoveringEffect {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.header__container .section__navbar ul li a:hover::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  animation: hoveringEffect 0.3s ease-out forwards;
+}
+
+/* Subscribe Section Inside Header */
+
+.section__subscribe {
+  width: 25%;
+}
+
+.header__container .section__subscribe ul {
+  list-style: none;
+}
+
+.header__container .section__subscribe ul li {
+  display: inline-block;
+}
+
+.header__container .section__subscribe ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__container .section__subscribe .subscribe li {
+  padding-top: 25px;
+  margin-left: 25px;
+  position: relative;
+}
+
+.header__container .section__subscribe .subscribe ul li a {
+  font-size: 14px;
+}
+
+.section__subscribe .subscribe ul li:nth-child(1) a:hover::after{    
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  animation: hoveringEffect 0.3s ease-out forwards;
+}
+
+.section__subscribe .subscribe .subscribe__link{
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.header__container i {
+    display: none;
+}
