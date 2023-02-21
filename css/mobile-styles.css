@@ -44,7 +44,7 @@
     }
 
     .header__container .section__navbar ul li:last-child{
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     .header__container .section__navbar ul li{
@@ -98,5 +98,20 @@
 
     .showMenuSection{
         transform: translateY(0px) !important;
+    }
+
+    .header__container .section__subscribe{
+        background-color: white;
+        width: 100%;
+        max-height: fit-content;
+        border-bottom: 1.5px solid #f5f5f5;
+    }
+
+    .header__container .section__subscribe ul {
+        margin-bottom: 40px;
+    }
+    .header__container .section__subscribe ul li {
+        display: block;
+        padding-left: 20px;
     }
 }

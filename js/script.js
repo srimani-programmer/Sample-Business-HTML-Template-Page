@@ -12,6 +12,12 @@ hamburgerMenu.addEventListener('click', () => {
     const menuItem = document.querySelector('.header__container .section__navbar');
     menuItem.classList.add('showMenuSection')
     menuItem.classList.remove('hideMenuSection');
+
+    const subscribeItem = document.querySelector('.header__container .section__subscribe');
+
+    subscribeItem.classList.add('showMenuSection')
+    subscribeItem.classList.remove('hideMenuSection');
+
 });
 
 closeButton.addEventListener('click', () => {
@@ -24,4 +30,10 @@ closeButton.addEventListener('click', () => {
     
     menuItem.classList.add('hideMenuSection')
     menuItem.classList.remove('showMenuSection');
+
+    const subscribeItem = document.querySelector('.header__container .section__subscribe');
+
+    subscribeItem.classList.add('hideMenuSection')
+    subscribeItem.classList.remove('showMenuSection');
+
 });
