@@ -41,7 +41,6 @@
   display: inline-block;
   padding-top: 25px;
   margin: 0 10px;
-  position: relative;
 }
 
 .header__container .section__navbar ul a {
@@ -64,6 +63,10 @@
   100% {
     width: 100%;
   }
+}
+
+.header__container .section__navbar ul li a{
+  position: relative;
 }
 
 .header__container .section__navbar ul li a:hover::after {
@@ -99,11 +102,11 @@
 .header__container .section__subscribe .subscribe li {
   padding-top: 25px;
   margin-left: 25px;
-  position: relative;
 }
 
 .header__container .section__subscribe .subscribe ul li a {
   font-size: 14px;
+  position: relative;
 }
 
 .section__subscribe .subscribe ul li:nth-child(1) a:hover::after{    
